@@ -11,7 +11,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 public class SecondActivity extends AppCompatActivity {
         EditText ime, prezime,mail, telefon;
-        TextView destinacija;
+        TextView vozilo;
         Button posalji;
         Putnik putnik;
         String destinacije;
@@ -26,15 +26,15 @@ public class SecondActivity extends AppCompatActivity {
         prezime=findViewById(R.id.prezime);
         telefon=findViewById(R.id.telefon);
         mail=findViewById(R.id.email);
-        destinacija = findViewById(R.id.destinacija);
+        vozilo = findViewById(R.id.vozilo);
         putnik = new Putnik();
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        destinacije=(String) getIntent().getSerializableExtra("destinacija");
-        destinacija.setText(destinacije);
+        destinacije=(String) getIntent().getSerializableExtra("vozilo");
+        vozilo.setText(destinacije);
     }
 
     @Override
@@ -45,7 +45,7 @@ public class SecondActivity extends AppCompatActivity {
     }
 
     private Boolean pokupljeneVredosti(String ime, String prezime, String mail, String telefon
-    , String destinacija){
+    , String vozilo){
 
         if(!ime.isEmpty()){
             putnik.setIme(ime);
@@ -74,7 +74,7 @@ public class SecondActivity extends AppCompatActivity {
             this.mail.requestFocus();
             return false;
         }
-        putnik.setDestinacija(destinacija);
+        putnik.setVozilo(vozilo);
 
 
         return true;

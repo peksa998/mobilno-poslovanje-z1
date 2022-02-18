@@ -37,27 +37,27 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(MainActivity.this, SecondActivity.class);
-                i.putExtra("destinacija", naziv.getText().toString());
+                i.putExtra("vozilo", naziv.getText().toString());
                 startActivity(i);
             }
         });
     }
 
     public void sledeci(View view) {
-        naziv.setText("Tara");
+        naziv.setText("Volkswagen Golf");
         naziv.setTextColor(getResources().getColor(R.color.purple_200));
-        slika.setImageResource(R.drawable.tara);
+        slika.setImageResource(R.drawable.golf);
     }
 
     public void prethodni(View view) {
-        naziv.setText("Zlatibor");
+        naziv.setText("Toyota Corolla");
         naziv.setTextColor(getResources().getColor(R.color.black));
-        slika.setImageResource(R.drawable.tibor);
+        slika.setImageResource(R.drawable.corolla);
         naziv.setTextSize(30);
     }
 
     public void ponuda(View view) {
-        Toast.makeText(this, "U ponudi su Zlatibor i Tara", Toast.LENGTH_LONG).show();
+        Toast.makeText(this, "U ponudi su Golf i Corolla", Toast.LENGTH_LONG).show();
     }
 
     @Override

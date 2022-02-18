@@ -7,7 +7,7 @@ public class Putnik implements Serializable {
     String prezime;
     String brojTelefona;
     String mail;
-    String destinacija;
+    String vozilo;
 
     public String getIme() {
         return ime;
@@ -41,12 +41,12 @@ public class Putnik implements Serializable {
         this.mail = mail;
     }
 
-    public String getDestinacija() {
-        return destinacija;
+    public String getVozilo() {
+        return vozilo;
     }
 
-    public void setDestinacija(String destinacija) {
-        this.destinacija = destinacija;
+    public void setVozilo(String vozilo) {
+        this.vozilo = vozilo;
     }
 
     public Putnik() {

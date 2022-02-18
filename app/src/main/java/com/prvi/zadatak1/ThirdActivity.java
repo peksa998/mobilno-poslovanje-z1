@@ -37,7 +37,7 @@ public class ThirdActivity extends AppCompatActivity {
 
         ime.setText(putnik.getIme() + " " + putnik.getPrezime());
 
-        String string = putnik.getMail() + " , " + putnik.getBrojTelefona() + " , " + putnik.getDestinacija();
+        String string = putnik.getMail() + " , " + putnik.getBrojTelefona() + " , " + putnik.getVozilo();
         podaci.setText(string);
     }
 

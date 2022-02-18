@@ -26,9 +26,9 @@
 
             <ImageView
                 android:layout_width="match_parent"
-                android:layout_height="200dp"
+                android:layout_height="250dp"
                 android:scaleType="centerCrop"
-                android:src="@drawable/turista"/>
+                android:src="@drawable/rentacar" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -61,7 +61,7 @@
                     android:backgroundTint="#AE8D2C"
                     android:drawableBottom="@color/design_default_color_error"
                     android:onClick="potvrdiPrijavu"
-                    android:text="Prijavi novog putnika"
+                    android:text="Izaberi drugo vozilo"
                     android:textAlignment="center"
                     android:textAppearance="@style/TextAppearance.AppCompat.Small"
                     android:textColor="#37FF00"
