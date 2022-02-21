@@ -142,10 +142,10 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:layout_marginTop="50dp"
-            android:background="@color/filip"
+            android:background="@color/pink"
             android:onClick="posaljiPodatke"
             android:text="Posalji podatke"
-            android:textColor="@color/dulac" />
+            android:textColor="@color/zuta1" />
 
     </LinearLayout>
 
